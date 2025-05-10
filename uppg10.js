@@ -8,7 +8,27 @@ function uppg10(){
     // other ska innehålla alla andra tal
     // returnera ett objekt med de tre arrayerna
 
-  
+    const bigEven = [];
+    const smallOdd = [];
+    const other = [];
+
+    for (let i = 0; i < numbers.length; i++){
+      const nummer = numbers[i];
+
+      if (nummer > 10 && nummer % 2 === 0) {
+        bigEven.push(nummer);
+      }
+      else if (nummer < 10 && nummer % 2 !== 0){
+        smallOdd.push(nummer);
+      }
+      else{
+        other.push(nummer);
+      }
+      }
+
+      return{
+        bigEven, smallOdd, other
+      };
     
   
   }

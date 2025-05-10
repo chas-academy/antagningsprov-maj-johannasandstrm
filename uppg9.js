@@ -8,6 +8,19 @@ function uppg9 (){
 
     // anropa funktionen och skicka med en array som argument
 
+    function sort (siffror){
+        for (let i = 0; i < siffror.length; i++){
+            if (siffror[i] %2 === 0){
+                console.log(siffror[i], "jämt");
+            }
+            else{
+                console.log(siffror[i], "udda");
+            }
+
+        }
+    }
+
+    sort([3,7,4,8,9,12]);
   
 }
 
